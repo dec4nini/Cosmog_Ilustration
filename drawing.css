@@ -1,0 +1,433 @@
+
+html{
+  background: linear-gradient(to bottom, rgb(31, 15, 69) 20%, #6f2a62 90%);
+  
+}
+
+.polkadot {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: radial-gradient(#fff 2%, transparent 5%),
+    radial-gradient(#fff 2%, transparent 2%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  background-repeat: repeat;
+  z-index: -4;
+}
+
+.drawing{
+  display: flex;
+  justify-content: center;
+
+}
+
+.cosmog{
+  position: relative;
+}
+
+.cosmog_core{
+  margin-left: 20px;
+  padding-top: 10px;
+
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(33, 33, 33);
+
+  margin-top: 50vh;
+}
+
+.cosmog_core::after, .cosmog_core::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(33, 33, 33);
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  transform: rotate(60deg);
+}
+
+.cosmog_core::before {
+  transform: rotate(-60deg);
+}
+.cloud{
+  background: linear-gradient(to bottom, rgb(84, 55, 150) 0%, #ff99cc 100%);
+}
+
+.cosmog_cloud{
+
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(57, 42, 93);
+  margin-top: 50vh;
+  z-index: -1;
+}
+
+.cosmog_cloud::after, .cosmog_cloud::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(92, 50, 143);
+
+  border-radius: 20px;
+  width: 120px;
+  height: 60px;
+  transform: rotate(60deg);
+  z-index: -1;
+  background: linear-gradient(to bottom right,rgb(43, 146, 181) -10%, rgb(57, 42, 93) 55%, #ff99cc 120%);
+}
+
+.cosmog_cloud::before {
+  transform: rotate(-60deg);
+  background: linear-gradient(to bottom left,rgb(43, 146, 181) -10%, rgb(57, 42, 93) 55%, #ff99cc 120%);
+
+}
+
+.cosmog_eyes{
+  position: absolute;
+  padding-top: 10px;
+
+  width: 12px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(238, 189, 74);
+  margin-top: 340px;
+  margin-left: 35px;
+}
+
+.cosmog_eyes::after {
+  content: '';
+  position: absolute;
+  padding-top: 10px;
+
+  width: 12px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(238, 189, 74);
+  margin-top: -10px;
+  margin-left: 35px;
+}
+
+.cosmog_mouth{
+  position: absolute;
+  padding-left: 5px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom left,rgb(210, 55, 179), #ff99cc 120%);
+  margin-top: 360px;
+  margin-left: 45px;
+}
+
+.cosmog_mouth::after {
+  content: '';
+  position: absolute;
+
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(238, 189, 74);
+  border-color: rgb(97, 105, 19);
+  border-top-style: solid;
+  margin-top: 8px;
+  margin-left: -2px;
+}
+
+
+.cosmog_arms {
+  position: absolute;
+  height: 50px;
+  width: 90px;
+  
+  margin-top: 310px;
+  margin-left: -35px;
+
+  background-color: rgba(43, 146, 181,0);
+  border: solid 10px #000;
+  border-color: rgb(43, 146, 181);
+  border-radius: 100%;
+  border-bottom-color: rgba(43, 146, 181,0);
+  left: 50%;
+  
+  transform: rotate(50deg);
+  z-index: -2;
+}
+
+.cosmog_arms2 {
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  
+  margin-top: 290px;
+  margin-left: -70px;
+
+  background-color: rgba(43, 146, 181,0);
+  border: solid 10px #000;
+  border-color: rgb(43, 146, 181);
+  border-radius: 100%;
+  border-bottom-color: rgba(43, 146, 181,0);
+  left: 50%;
+  
+  transform: rotate(220deg);
+  z-index: -2;
+}
+
+.cosmog_arms3 {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  
+  margin-top: 320px;
+  margin-left: 35px;
+
+  background-color: rgba(43, 146, 181,0);
+  border: solid 10px #000;
+  border-top-color: rgba(43, 147, 181, 1);
+  border-left-color: rgba(43, 147, 181, 1);
+  border-right-color:  rgba(43, 147, 181, 1);
+  border-radius: 100%;
+  border-bottom-color: rgba(43, 146, 181,0);
+  left: 50%;
+  
+  transform: rotate(-60deg);
+  z-index: -2;
+}
+
+.cosmog_arms4 {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  
+  margin-top: 290px;
+  margin-left: 118px;
+
+  background-color: rgba(43, 146, 181,0);
+  border: solid 15px #000;
+  border-color: rgb(43, 146, 181);
+  border-radius: 100%;
+  border-bottom-color: rgba(43, 146, 181,0);
+  left: 50%;
+  
+  transform: rotate(-210deg);
+  z-index: -2;
+}
+
+.cosmog_L_cloud{
+
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(43, 146, 181)  ;
+  margin-top: 45vh;
+  margin-left: -70px;
+  z-index: -1;
+}
+
+.cosmog_L_cloud::after, .cosmog_L_cloud::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(43, 146, 181);
+
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  transform: rotate(60deg);
+  z-index: -1;
+}
+
+.cosmog_L_cloud::before {
+  transform: rotate(-60deg);
+
+}
+
+.cosmog_R_cloud{
+
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(43, 146, 181)  ;
+  margin-top: 45vh;
+  margin-left: 110px;
+  z-index: -1;
+}
+
+.cosmog_R_cloud::after, .cosmog_R_cloud::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(43, 146, 181);
+
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  transform: rotate(60deg);
+  z-index: -1;
+}
+
+.cosmog_R_cloud::before {
+  transform: rotate(-60deg);
+
+}
+
+.cosmog_ring {
+  position: absolute;
+  height: 60px;
+  width: 12px;
+  
+  margin-top: 290px;
+  margin-left: 35px;
+
+  background-color: rgba(43, 146, 181,0);
+  border: solid 8px #000;
+  border-color: rgb(238, 189, 74);
+  border-left-color: rgba(43, 146, 181,0);
+  border-radius: 100%;
+  border-bottom-color: rgba(43, 146, 181,0);
+  left: 50%;
+  
+  z-index: -1;
+}
+
+.cosmog_ring_bottom {
+  position: absolute;
+  height: 50px;
+  width: 12px;
+  
+  margin-top: 360px;
+  margin-left: 35px;
+
+  background-color: rgba(43, 146, 181,0);
+  border: solid 8px #000;
+  border-color: rgb(238, 189, 74);
+  border-left-color: rgba(43, 146, 181,0);
+  border-radius: 100%;
+  border-bottom-color: rgba(43, 146, 181,0);
+  left: 50%;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.cosmog_blush{
+
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(43, 146, 181);
+  margin-top: 55vh;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+.cosmog_blush::after, .cosmog_blush::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(43, 146, 181);
+
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: 50px;
+  z-index: -1;
+}
+
+.cosmog_stars{
+
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 47vh;
+  margin-left: -40px;
+  z-index: 1;
+}
+
+.cosmog_stars::after, .cosmog_stars::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(255, 255, 255);
+
+  border-radius: 50%;
+  width: 10px;
+  height: 20px;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+.cosmog_stars2{
+
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 45vh;
+  margin-left: -30px;
+  z-index: 1;
+}
+
+.cosmog_stars2::after, .cosmog_stars2::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(255, 255, 255);
+
+  border-radius: 50%;
+  width: 10px;
+  height: 5px;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+.cosmog_stars3{
+
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 44vh;
+  margin-left: 140px;
+  z-index: 1;
+}
+
+.cosmog_stars3::after, .cosmog_stars3::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(255, 255, 255);
+
+  border-radius: 50%;
+  width: 10px;
+  height: 5px;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+.cosmog_stars4{
+
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 48vh;
+  margin-left: 140px;
+  z-index: 1;
+}
+
+.cosmog_stars4::after, .cosmog_stars4::before {
+  content: '';
+  position: absolute;
+  background-color:rgb(255, 255, 255);
+
+  border-radius: 50%;
+  width: 25px;
+  height: 10px;
+  transform: rotate(90deg);
+  z-index: -1;
+}
